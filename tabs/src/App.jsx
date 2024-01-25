@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Jobinfo from "./components/Jobinfo";
 
 const url = 'https://course-api.com/react-tabs-project';
 
@@ -20,13 +21,15 @@ const App = () => {
   if (isLoading) {
     return (
       <section className="w-[80vw] my-[5rem] mx-auto max-w-[1200px]">
-        <div>Is Loading</div>
+        <div className="loading"></div>
       </section>
     )
   }
 
   return (
-    <h1>Tabs</h1>
+    <section className="w-[80vw] my-[5rem] mx-auto max-w-[1200px]">
+      <Jobinfo jobs={jobs}/>
+    </section>
   )
 };
 
