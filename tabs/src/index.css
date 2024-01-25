@@ -24,3 +24,62 @@
     animation: spinner 0.6s linear infinite;
     margin: 0 auto;
 }
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+
+.jobs-center {
+    width: 80vw;
+    margin: 5rem auto;
+    max-width: 1200px;
+  }
+
+.job-btn {
+    background: transparent;
+    border-color: transparent;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out all;
+}
+
+.job-btn:hover {
+    color: #4b0596;
+    box-shadow: 0 2px #4b0596;
+}
+
+.active-btn {
+    color: #4b0596;
+    box-shadow: 0 2px #4b0596;
+  }
+
+@media screen and (min-width: 992px) {
+    .jobs-center {
+      width: 90vw;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      column-gap: 4rem;
+    }
+
+    .btn-container {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .job-btn {
+      margin-bottom: 1rem;
+    }
+
+    .job-btn:hover {
+      box-shadow: -2px 0px #4b0596;
+    }
+
+    .active-btn {
+      box-shadow: -2px 0px #4b0596;
+    }
+  }

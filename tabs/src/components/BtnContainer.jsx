@@ -1,6 +1,17 @@
-const BtnContainer = () => {
+const BtnContainer = ({jobs}) => {
     return (
-      <h1>BtnContainer</h1>
+      <div className="btn-container">
+        {jobs.map((item) => {
+          return (
+            <button 
+              key={item.id}
+              className="job-btn"
+            >
+              {item.company}
+            </button>
+          )
+        })}
+      </div>
     )
   };
   
