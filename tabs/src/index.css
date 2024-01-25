@@ -38,8 +38,14 @@
     width: 80vw;
     margin: 5rem auto;
     max-width: 1200px;
-  }
+}
 
+.jobs-center {
+    width: 80vw;
+    margin: 5rem auto;
+    max-width: 1200px;
+  }
+  
 .job-btn {
     background: transparent;
     border-color: transparent;
